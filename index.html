@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flashcard Study App</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<h1><i class="fa-solid fa-book-open"></i> Flashcard Study</h1>
+
+<div class="counter" id="counter"></div>
+
+<div class="progress">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div class="card-container">
+
+<div class="flashcard" id="flashcard">
+
+<div class="card-face front" id="question"></div>
+
+<div class="card-face back" id="answer"></div>
+
+</div>
+
+</div>
+
+<div class="controls">
+
+<button class="prev" onclick="prevCard()">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<button class="shuffle" onclick="shuffleCards()">
+<i class="fa-solid fa-shuffle"></i>
+</button>
+
+<button class="next" onclick="nextCard()">
+<i class="fa-solid fa-arrow-right"></i>
+</button>
+
+</div>
+
+<button class="delete" onclick="deleteCard()">
+<i class="fa-solid fa-trash"></i> Delete Card
+</button>
+
+<div class="form">
+
+<input id="newQuestion" placeholder="Enter question">
+
+<textarea id="newAnswer" placeholder="Enter answer"></textarea>
+
+<button class="add" onclick="addCard()">
+<i class="fa-solid fa-plus"></i> Add Flashcard
+</button>
+
+</div>
+
+</div>
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
